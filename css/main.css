@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --cart-btn: rgba(222, 243, 189, 0.61);
+  --edit-btn: #ffffff;
+  --chk-btn: #1fc960;
+  --first-color: #4D49BF;
+  --second-color: #05DBF2;
+  --body-color: #DFE9F2;
+  --title-color: #1C1C22;
+  --text-color: #58576B;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: rgb(172, 156, 156);
+}
+
+/* LOGO */
+#logo {
+  display: flex;
+}
+#logo img {
+  height: 35px;
+  margin: 0 30px;
+  background: rgb(255, 255, 255);
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+/* Navbar */
+
+header {
+  width: 100%;
+  height: 60px;
+  background: rgb(63, 63, 63);
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul .li {
+  margin-right: 40px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(140, 209, 255);
+}
+
+/* Login-section ----------------*/
+
+.login-section {
+  border: 3px rgb(240, 109, 49) solid;
+  border-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+/* Left-button */
+
+#log-li {
+  padding: 5px;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+#log-li:hover {
+  background: rgb(240, 109, 49);
+}
+#sign-in-a {
+  padding: 35px;
+  background: white;
+  color: rgb(209, 90, 34);
+  transition: all 0.3s ease-in-out;
+}
+#sign-in-a:hover {
+  background: rgb(240, 109, 49);
+  color: white;
+}
+
+/* Right-button */
+
+#sign-li {
+  padding: 5px;
+  background: rgb(240, 109, 49);
+  transition: all 0.3s ease-in-out;
+}
+#sign-li:hover {
+  background: rgb(255, 255, 255);
+}
+#sign-up-a {
+  padding: 35px;
+  background: rgb(240, 109, 49);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+#sign-up-a:hover {
+  background: white;
+  color: rgb(240, 109, 49);
+}
+
+/* Download cv of Boris Galac */
+
+.btn-cv {
+  border: none;
+  outline: none;
+  padding:0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-cv:hover {
+  background: rgb(226, 218, 218);
+}
+
+/* Utilities */
+
+.style-btn {
+  background: var(--cart-btn);
+  color: black;
+}
+
+.style-edt-btn {
+  background: var(--edit-btn);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+.style-chk-btn {
+  background: var(--chk-btn);
+  color: white;
+  border: 1px solid rgb(76, 207, 87);
+}
+
+/* -------------------------------- SHOWCASE ------------------------------ */
+
+.showcase {
+  height: 92vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    122deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(201, 238, 211) 100%
+    );
+    display: flex;
+    justify-content: center;
+  }
+  .heading-showcase {
+    position: absolute;
+  }
+  
+/*  ----------- shopping-box-1 (navbar) -----------*/
+
+/* shopping cart btn*/
+.cart-btn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 350px;
+  color: beige;
+}
+
+/* top image arrow*/
+.top-img {
+  width: 300px;
+}
+
+/* cart list (outer)*/
+.shopping-list {
+ position: absolute;
+ right: 345px;
+ top: 50px;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.068);
+}
+/* cart list (inner)*/
+.cart-list {
+  width: 300px;
+  background: linear-gradient(130deg,
+  rgba(251,251,254,.6),
+  rgba(251,251,254,.2));
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top-box {
+  background: var(--body-color);
+  color: rgb(0, 0, 0);
+  padding: 0.3rem 1rem;
+  width: 300px;
+}
+/* item */
+.item {
+  width: 95%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px rgba(0, 0, 0, 0.144) solid;
+}
+.item img {
+  width: 85px;
+}
+.item-description {
+  color: black;
+}
+.shopping-list p {
+  color: rgb(0, 0, 0);
+}
+.shopping-list h3 {
+  color: rgb(73, 73, 73);
+}
+/* bottom-box */
+.bottom-box {
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background: white;
+}
+/* bottom-btn */
+.btn {
+  padding:0.6rem 1.7rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/*  ----------- shopping-cart-2 (showcase)-----------*/
+  .shopp-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 300px;
+    height: 0px;
+
+
+  }
+/* Shopping cart-btn ------ */
+
+.cart-btn1 {
+  margin-top: 6rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 55px;
+  padding: 1.4rem;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+
+}
+.cart-btn1:hover {
+  background-color: rgb(247, 239, 239);
+  transition: 0.3s ease;
+}
+
+/* Shopping cart-list (outer)------  */
+
+.shop-crt {
+  width: 280px;
+  margin-top: 15px;
+  margin-left: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.137);
+
+  display: none;
+}
+
+/* Shopping cart-list (inner) ------  */
+
+.cart-list1 {
+  height: 250px;
+  overflow-y: hidden;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0 10px;
+  background: rgb(255, 255, 255);
+
+  display: none;
+}
+
+/* Shopping cart-item ------  */
+
+.item1 {
+  height: 5.2rem;
+  width: 100%;
+  padding: 10px 0rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-bottom: 1px rgba(0, 0, 0, 0.11) solid;
+  color: rgb(99, 96, 96);
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-description1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item1 img {
+  width: 75px;
+}
+
+/* On top shopping-list */
+.scroll-btn-up {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background: rgb(228, 219, 219);
+  cursor: pointer;
+}
+.scroll-btn-up i{
+  transform: translateY(4px);
+}
+.scroll-btn-up:hover {
+  background: rgb(212, 199, 199);
+}
+.scroll-btn-down {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background: rgb(228, 219, 219);
+  cursor: pointer;
+}
+.scroll-btn-down i{
+  transform: translateY(-4px);
+}
+.scroll-btn-down:hover {
+  background: rgb(212, 199, 199);
+}
+
+.top-img1 {
+  width: 101%;
+  transform: translate(-2px, -18px);
+}
+.items-nr {
+  transform: translateY(-12px);
+  padding-left: 21px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--title-color)
+  
+}
+
+/* bottom */
+.bottom-box1 {
+  padding: 0.8rem 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn1 {
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+}
+
+/* class for JS cart-shopping-list */
+
+.toggle {
+  display: block;
+  animation: fade 0.3s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .showcase {
+    overflow-x: hidden;
+  }
+  nav {
+    overflow: hidden;
+  }
+  body {
+    overflow: hidden;
+  }
+  .login-section {
+    display: none;
+  }
+  .btn-cv {
+    position: absolute;
+    top: 165px;
+    left: 30px;
+  }
+  .cart-btn {
+    display: none;
+  }
+}
+
